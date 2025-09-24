@@ -1,0 +1,120 @@
+/* Custom Properties */
+
+:root {
+    --brand-color: rgb(218, 52, 43);
+    --fill-color: rgb(247, 247, 247);
+}
+
+/* Algemeen */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Header */
+
+header section:nth-of-type(2) {
+    border-top: 0.1em solid lightgray;
+    width: 100vw;
+}
+
+header li:nth-of-type(1) {
+    color: var(--brand-color)
+}
+
+div {
+    position: relative;
+    display: inline-block;
+   
+}
+
+div input {
+    background-color: var(--fill-color);
+    border: 0;
+    padding-right: 2rem;
+    height: 2.5em;
+    border-radius: 2em;
+    width: 50vw;
+}
+
+div img {
+    position: absolute;
+    left: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.5em;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+nav li:nth-of-type(1) a {
+    color: var(--brand-color);
+}
+
+/* Main */
+
+main section:nth-of-type(1) img {
+    width: 100vw;
+    z-index: 0;
+}
+
+
+main section:nth-of-type(1) h2 {
+    text-transform: uppercase;
+}
+
+main section:nth-of-type(1) a {
+    color: white;
+    background-color: black;
+    padding: 1em 2em;
+    border-radius: 2em;
+}
+
+h1 {
+    text-transform: capitalize;
+}
+
+p {
+    max-width: 20em;
+}
+
+a {
+    color: black;
+}
+
+img {
+    width: 10em;
+}
+
+ul {
+    display: flex;
+    list-style-type: none
+}
+
+li {
+    flex-basis: 10em;
+    cursor: pointer;
+    font-size: small;
+}
+
+button {
+    cursor: pointer;
+}
+
+article {
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+/* Footer */
+
+footer ul {
+    flex-direction: column;
+}
